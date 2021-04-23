@@ -16,3 +16,6 @@ const a = prompt('One of last watched movie?', ''),
       d = prompt('Вопрос №4', '');
 
 personaMovieDB.movies[a] = b;
+personaMovieDB.movies[c] = d;
+
+console.log(personaMovieDB);
