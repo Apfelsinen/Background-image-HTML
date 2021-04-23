@@ -25,5 +25,5 @@ console.log(arr[5]);
 
 const result = confirm("Are you here?");
 console.log(result);
-const answer = prompt("Вам есть 18?");
+const answer = prompt("Вам есть 18? Дайте ответ.");
 console.log(typeof(answer));
