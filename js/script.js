@@ -10,10 +10,10 @@ const personaMovieDB = {
     privat: false
 };
 
-const a = prompt('One of last watched movie?', ''),
+const a = prompt('Какой последний фильм вы смотрели?', ''),
       b = prompt( 'На сколько оцените?', ''),
-      c = prompt('Один из последних просмотреных фильмов?', ''),
-      d = prompt('Вопрос №4', '');
+      c = prompt('Вы смотрели фильмы Пиксар?', ''),
+      d = prompt('И последний вопрос, сколько вам лет', '');
 
 personaMovieDB.movies[a] = b;
 personaMovieDB.movies[c] = d;
