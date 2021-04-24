@@ -7,11 +7,11 @@ const personaMovieDB = {
     movies: {},
     actors: {},
     genres: {},
-    privat: false
+    private: false
 };
 
 const a = prompt('Какой последний фильм вы смотрели?', ''),
-      b = prompt( 'На сколько оцените?', ''),
+      b = prompt('На сколько оцените?', ''),
       c = prompt('Вы смотрели фильмы Пиксар?', ''),
       d = prompt('И последний вопрос, сколько вам лет', '');
 
