@@ -19,3 +19,8 @@ personaMovieDB.movies[a] = b;
 personaMovieDB.movies[c] = d;
 
 console.log(personaMovieDB);
+if (4 == 9) {
+    console.log('Ok!');
+} else {
+    console.log('Error!');
+}
