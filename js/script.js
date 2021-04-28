@@ -51,18 +51,32 @@ switch (numTwo) { //строгое соответствие
         console.log('error');
         break;
 }
-//  Cycles
+//  3 Cycle methods:
 let numCycle = 50;
-
+// 1. while cycle
 while (numCycle <= 55) {
     console.log(numCycle);
     numCycle++;
 }
 let numCycleTwo = 50;
-
+// 2. do cycle
 do {
     console.log(numCycleTwo);
     numCycleTwo++;
 }
 while (numCycleTwo <= 55);
+// 3. for cycle
+let numCycle3 = 50;
+for (let i  = 1; i < 8; i++) {
+    console.log(numCycle3);
+    numCycle3++
+}  //i - iterator, будет повторять столько сколько мы указали раз. 
+// break - прервать цикл досрочно. contunue - позволяет пропустить тот шаг, который нам не нужен.
+for (let i  = 1; i < 10; i++) {
+    if (i === 6) {
+        //break; (когда дойдет до 6, цикл будет прерван.)
+        continue; // т.е. пропускает 6 шаг.
+    }
 
+    console.log(i);
+}
