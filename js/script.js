@@ -34,3 +34,20 @@ if (num < 49) {
 } else {
     console.log('Ok!');
 }
+(num === 50) ? console.log('Ok!') : console.log('Error');
+
+const numTwo = 50;
+switch (numTwo) { //строгое соответствие
+    case 49:
+        console.log('Error!');
+        break;
+    case 100:
+        console.log('Error!');
+        break;
+    case 50:
+        console.log('Ok!');
+        break;
+    default:
+        console.log('error');
+        break;
+}
