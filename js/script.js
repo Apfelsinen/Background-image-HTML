@@ -51,3 +51,18 @@ switch (numTwo) { //строгое соответствие
         console.log('error');
         break;
 }
+//  Cycles
+let numCycle = 50;
+
+while (numCycle <= 55) {
+    console.log(numCycle);
+    numCycle++;
+}
+let numCycleTwo = 50;
+
+do {
+    console.log(numCycleTwo);
+    numCycleTwo++;
+}
+while (numCycleTwo <= 55);
+
