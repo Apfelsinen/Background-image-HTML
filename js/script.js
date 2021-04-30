@@ -38,11 +38,15 @@ for (let i = 0; i < 2; i++) {
 // personaMovieDB.movies[a] = b;
 //Task #2
     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        //оператор отрицания != на проверку null
+        //логический оператор &&
+        //
         personalMovieDB.movies[a] = b;
         console.log('done');
     } else {
         console.log('Error!');
         i--;
+        //можно прибовлять и отнимать
     }
 }
 //Task #3:
