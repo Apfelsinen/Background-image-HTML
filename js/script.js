@@ -14,4 +14,20 @@
 "Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
 
 4) Потренироваться и переписать цикл еще двумя способами*/
+const numberOfFilms = +prompt('How many movie did saw?', '');
 
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: {},
+    private: false
+};
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Оди из последних просмотренных фильмов?', ''),
+          b = prompt('На сколько оцените его?', '');
+
+    personalMovieDB.movies[a] = b;
+}
+
+console.log(personalMovieDB);
