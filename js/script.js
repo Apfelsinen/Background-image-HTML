@@ -14,6 +14,8 @@
 "Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
 
 4) Потренироваться и переписать цикл еще двумя способами*/
+
+//Old old code
 const numberOfFilms = +prompt('How many movie did saw?', '');
 
 const personalMovieDB = {
@@ -23,11 +25,35 @@ const personalMovieDB = {
     genres: {},
     private: false
 };
+//Task #1
+// const a = prompt('Какой последний фильм вы смотрели?', ''), //запишем напр: 1
+//     b = prompt('На сколько оцените его?', ''), //запишем напр: 2
+//     c = prompt('Вы смотрели фильмы Пиксар?', ''), //запишем напр: 3
+//     d = prompt('На сколько оцените ихние фильмы?', ''); //запишем напр: 4
+
 for (let i = 0; i < 2; i++) {
     const a = prompt('Оди из последних просмотренных фильмов?', ''),
           b = prompt('На сколько оцените его?', '');
-
-    personalMovieDB.movies[a] = b;
+// Цикл происходит 2 раза, т.е. i равен 0, увеличиваем до меньше двух, на 1.
+// personaMovieDB.movies[a] = b;
+//Task #2
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('Error!');
+        i--;
+    }
+}
+//Task #3:
+if(personalMovieDB < 10) {
+    console.log("Просмотрено довольно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log("Вы классический зритель");
+} else if (personalMovieDB.count >=30) {
+    console.log("Вы киноман");
+} else {
+    console.log("Error!")
 }
 
 console.log(personalMovieDB);
