@@ -1,18 +1,12 @@
 "use strict";
-
-const str = "test";
-const arr = [1, 2, 3];
-
-console.log(str.length); //4
-console.log(arr.length); //3
-
-const num = 12.2;
-console.log(Math.round(num));
-
-const test = "12.2px";
-console.log(parseInt(test)); //12
-console.log(parseFloat(test)); //12.2
-
+//Lesson #18
+let numberOfFilms;
 function start() {
+    numberOfFilms = +promt('How many movies did you watched?', ''); //+для того чтобы был числовой тип данных
 
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +promt('How many movies did you watched?', '');
+    }
 }
+
+start();
